@@ -1,0 +1,17 @@
+package SimUDuck.Duck;
+
+import SimUDuck.Fly.FlyWithWings;
+import SimUDuck.Quack.Quack;
+
+public class MallardDuck extends Duck {
+
+    public MallardDuck(){
+        quackBehaviour = new Quack();
+        flyBehaviour = new FlyWithWings();
+    }
+
+    @Override
+    public void display() {
+        System.out.println("I'm a real Mallard Duck");
+    }
+}
